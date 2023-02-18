@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-variant:small-caps;
+            
+        }
+        fieldset{
+            margin: 10px 0px;
+        }
+        .name {
+            background-color:yellow;
+            box-shadow:0 0 3 red;
+            border: 1px solid yellow;
+            width: 100%;
+            border: 1px solid red;
+        }
+      .form{
+        width: 100%;
+    }
+    .form-button{
+            padding: 8px 30px;
+            outline:none;
+            border:none;
+            border-radius:20px;
+            font-weight:bold;
+            background-color:white;
+            color:orangered;
+            box-shadow:inset 0 0 20px;
+            margin: 10px;
+        }
+        .form-button:hover{
+            color:blue;
+            box-shadow:inset 0 0 20px orangered;
+
+        } 
+        hr{
+            margin: 10px;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+        <label for="">Họ và Tên:</label><br>
+        
+            <input type="text" class="form">
+        </div>
+        <div>
+            <fieldset>
+                <legend>
+        Giới Tính:</legend><br>
+            <input type="radio"> Nam
+            <input type="radio"> Nữ
+        </fieldset>
+    
+    </div>
+        <div>
+            <label for="">ngày sinh:</label><br>
+       
+        <input type="date">
+    </div>
+        <div>
+        <label for="">điểm:</label><br>
+        <input type="number" min="0" max="10" step="0.25" class="name">
+    </div>
+    <div >
+        <label for="">nghề nghiệp:</label><br>
+        
+            <input type="list" list="die" class="form">
+            <datalist>
+                <option value="giáo viên"></option>
+                <option value="đầu bếp"></option>
+                <option value="nhân viên"></option>
+                <option value="sinh viên"></option>
+                <option value="công nhân"></option>
+            </datalist>
+            
+        </div>
+        <div >
+            <fieldset>
+        <legend><label for="">Sở Thích</label></legend><br>
+      
+            <input type="checkbox">Thể Thao
+            <input type="checkbox">Du Lịch
+            <input type="checkbox">Âm Nhạc
+            <input type="checkbox">Ẩm Thực
+        </fieldset>
+    </div>
+    <div >
+        <label for="">Ghi Chú:</label><br>
+        
+            <textarea name="" id="" cols="160" rows="5"></textarea>
+      
+    </div>
+        <hr>
+        <div class="menu">
+        <input type="button" class="form-button" value="Đăng Ký" >
+        <input type="reset" class="form-button" value="Nhập lại" >
+    </div>
+    </div>
+</body>
+</html>

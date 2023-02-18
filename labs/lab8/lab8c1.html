@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu>ul>li
+        {
+            display:inline-block;
+            position:relative;
+        }
+        .menu>ul>li>a
+        {
+            display:block;
+            text-decoration:none;
+            font-variant:small-caps;
+            font-size:larger;
+            color:white;
+            padding:0 10 pixel;
+            line-height:40 pixel;
+        }
+        .menu>ul
+        {
+            padding:0 pixel;
+            margin:0 pixel;
+            list-style:none;
+            border-radius:3 pixel;
+            background-color:orangered;
+            text-align:center
+        }
+        .menu>ul>li>a:hover
+        {
+            color:yellow;           
+        }
+        .menu ul ul
+        {
+            position:absolute;
+            display:none;
+            padding:0 pixel;
+            margin:0 pixel;
+            list-style:none;
+            border-radius:3 pixel;
+            width:200 pixel;
+            background-color:white;
+            box-shadow:0 0 1 pixel gray;
+        }
+        .menu ul ul a
+        {
+            display:block;
+            line-height:30 pixel;
+            color:orangered;
+            text-decoration:none;
+            font-variant:small-caps;
+            font-size:larger;
+            padding:0 10 pixel;
+        }
+        .menu>ul>li:hover>ul
+        {
+            display:block;
+        }
+        .menu ul ul a:hover
+        {
+            background-color:orangered;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+        <li><a href="/labs/lab2c2.html">Trang chủ</a></li>
+        <li><a href="/labs/lab3c1.html">Giới thiệu</a></li>
+        <li><a href="/labs/lab3c2.html">Liên hệ</a>
+            <ul>
+                <li><a href="/img/icon1.png">Mobile</a></li>
+                <li><a href="/img/ufo.png">Email</a></li>
+            </ul>
+        </li>
+        <li><a href="/labs/lab1c2.html">Góp ý</a></li>
+        <li><a href="/labs/phuonngtrinh.html">Hỏi đáp</a></li>
+        </ul>
+       </nav>
+</body>
+</html>
